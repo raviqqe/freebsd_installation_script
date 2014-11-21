@@ -1,0 +1,18 @@
+sudo
+vim-lite
+git
+svn
+lynx
+
+# xorg server
+xorg-minimal
+xf86-video-intel
+r xf86-video-vesa
+hal
+dbus
+
+# x apps
+urxvt
+dwm
+firefox
+thunderbird
