@@ -11,7 +11,7 @@ do
 	then
 		echo "installing $word1"
 		pkg install -y $word1
-	elseif [ $word1 == 'r' ]
+	elif [ $word1 == 'r' ]
 	then
 		echo "removing $word2"
 		pkg remove -y $word2
