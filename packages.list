@@ -1,7 +1,7 @@
 sudo
 vim-lite
 git
-svn
+subversion
 lynx
 
 # xorg server
@@ -12,7 +12,9 @@ hal
 dbus
 
 # x apps
-urxvt
+rxvt-unicode
 dwm
+surf-browser
+feh
 firefox
 thunderbird
