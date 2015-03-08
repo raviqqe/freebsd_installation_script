@@ -1,17 +1,34 @@
 sudo
+lynx
+links
+nmap
+
+# dev
 vim-lite
 git
 subversion
-lynx
+fossil
 
-# xorg server
+# langs
+python
+ruby
+go
+
+# gui
+## xorg server
 xorg-minimal
 xf86-video-intel
 r xf86-video-vesa
 hal
 dbus
 
-# x apps
+## xorg utils
+xorg-docs
+xsetroot
+xset
+xlsfonts
+
+## gui apps
 rxvt-unicode
 dwm
 surf-browser
@@ -19,6 +36,6 @@ feh
 firefox
 thunderbird
 
-# fonts
+## fonts
 terminus-font
 ja-font-ipa
