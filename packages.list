@@ -2,6 +2,8 @@ sudo
 lynx
 links
 nmap
+mutt
+irssi
 
 # dev
 vim-lite
