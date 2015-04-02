@@ -1,49 +1,54 @@
-sudo
-nmap
-irssi
+i sudo
+i nmap
 
 # port-mgmt
+i portmaster
 
 # devel
-vim-lite
-git
-subversion
-fossil
-
-# www
-lynx
-links
-w3m
-
-# mail
+i vim-lite
+i git
+i subversion
+i fossil
 
 # lang
-python3
-ruby
-go
+i python3
+i ruby
+i go
+
+# www
+i lynx
+i links
+i w3m
+
+# mail
+i fetchmail
+i procmail
+
+# irc
+i irssi
 
 # gui
 ## xorg server
-xorg-minimal
-xf86-video-intel
+i xorg-minimal
+i xf86-video-intel
 r xf86-video-vesa
-hal
-dbus
+i hal
+i dbus
 
 ## xorg utils
-xorg-docs
-xsetroot
-xset
-xlsfonts
+i xorg-docs
+i xsetroot
+i xset
+i xlsfonts
 
 ## gui apps
-rxvt-unicode
-dwm
-surf
-feh
-firefox
-thunderbird
+i rxvt-unicode
+i dwm
+i surf
+i feh
+i firefox
+i thunderbird
 
 ## fonts
-terminus-font
-ja-font-ipa
+i terminus-font
+i ja-font-ipa
