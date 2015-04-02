@@ -15,7 +15,7 @@ sed 's/#.*//g' |
 grep -v '^[[:blank:]]*$' |
 while read word1 word2
 do
-  case word1 in
+  case $word1 in
   i)
 		echo installing $word2
 		pkg install -y $word2
