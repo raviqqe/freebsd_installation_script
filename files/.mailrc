@@ -1,0 +1,20 @@
+# $FreeBSD: releng/10.1/share/skel/dot.mailrc 50476 1999-08-28 00:22:10Z peter $
+#
+# .mailrc - mail resources
+#
+# see also mail(1)
+#
+
+set append ask autoprint 
+set indentprefix="> "
+set PAGER=more
+set EDITOR=vi
+set VISUAL=vi
+retain bcc cc date from subject to
+
+# include your private mail aliases
+source ~/.mail_aliases
+
+#set folder=mail
+#set from="raviqqe@gmail.com"
+#set USER="raviqqe@gmail.com"

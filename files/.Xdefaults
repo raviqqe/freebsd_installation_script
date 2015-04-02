@@ -1,0 +1,10 @@
+urxvt*foreground: #ffffff
+urxvt*background: #000000
+urxvt*pointerBlank: True
+urxvt*scrollBar: False
+urxvt*transparant: True
+urxvt*font: xft:Terminus:size=8
+urxvt*boldFont: xft:Terminus:bold:size=8
+urxvt*italicFont: xft:Terminus:italic:size=8
+urxvt*boldItalicFont: xft:Terminus:bold:size=8
+urxvt*shading: 16
