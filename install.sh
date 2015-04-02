@@ -13,9 +13,15 @@ yes | pkg
 cat packages.list |
 sed 's/#.*//g' |
 grep -v '^[[:blank:]]*$' |
-while read word1 word2
+while read word1 word2 others
 do
-  case word1 in
+  if [ -n "$others" ]
+  then
+    echo extra fields detected >&2
+    exit 1
+  fi
+
+  case $word1 in
   i)
 		echo installing $word2
 		pkg install -y $word2
@@ -25,7 +31,7 @@ do
 		pkg remove -y $word2
     ;;
   *)
-    echo invalid letter at the first field
+    echo invalid letter at the first field >&2
     exit 1
   esac
 done
