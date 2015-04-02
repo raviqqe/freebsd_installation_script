@@ -1,10 +1,14 @@
 #!/bin/sh
 
+USER=raviqqe
+readonly USER
+
 echo "install.sh - initial package installation script"
 
 # install pkg command when it's not done yet
 yes | pkg
 
+# install packages
 cat packages.list |
 sed 's/#.*//g' |
 grep -v '^[[:blank:]]*$' |
@@ -24,3 +28,6 @@ do
     exit 1
   esac
 done
+
+# copy config files
+cp files/.Xdefaults /home/$USER

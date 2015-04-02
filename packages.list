@@ -1,18 +1,24 @@
 sudo
-lynx
-links
 nmap
-mutt
 irssi
 
-# dev
+# port-mgmt
+
+# devel
 vim-lite
 git
 subversion
 fossil
 
-# langs
-python
+# www
+lynx
+links
+w3m
+
+# mail
+
+# lang
+python3
 ruby
 go
 
@@ -33,7 +39,7 @@ xlsfonts
 ## gui apps
 rxvt-unicode
 dwm
-surf-browser
+surf
 feh
 firefox
 thunderbird
