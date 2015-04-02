@@ -1,7 +1,8 @@
 #!/bin/sh
 
 USER=raviqqe
-readonly USER
+GROUP=$USER
+readonly USER GROUP
 
 echo "install.sh - initial package installation script"
 
@@ -16,11 +17,11 @@ while read word1 word2
 do
   case word1 in
   i)
-		echo "installing $word2"
+		echo installing $word2
 		pkg install -y $word2
     ;;
   r)
-		echo "removing $word2"
+		echo removing $word2
 		pkg remove -y $word2
     ;;
   *)
@@ -30,4 +31,4 @@ do
 done
 
 # copy config files
-cp files/.Xdefaults /home/$USER
+install -o "$USER" -g "$GROUP" -m 600 files/.* /home/$USER
