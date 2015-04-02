@@ -27,23 +27,22 @@ i procmail
 # irc
 i irssi
 
-# gui
-## xorg server
+# x11
+## servers
 i xorg-minimal
 i xf86-video-intel
 r xf86-video-vesa
 i hal
 i dbus
 
-## xorg utils
+## utils
 i xorg-docs
 i xsetroot
 i xset
 i xlsfonts
 
-## gui apps
+## apps
 i rxvt-unicode
-i dwm
 i surf
 i feh
 i firefox
