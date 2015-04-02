@@ -1,0 +1,28 @@
+#set postmaster raviqqe
+#set no bouncemail
+#
+#defaults
+#protocol auto
+#uidl
+#keep
+#no mimedecode
+#smtphost localhost
+
+#set logfile "fetchmail.log"
+#
+#defaults
+#protocol auto
+#keep
+#fetchall
+#smtphost localhost
+
+defaults
+protocol auto
+no mimedecode
+mda "/usr/local/bin/procmail"
+
+poll imap.googlemail.com proto imap user raviqqe password Gytri1993 ssl
+#poll pop.toyota-ti.ac.jp user sd12056 password ytri1993 is raviqqe here
+
+#poll google.com protocol pop3:
+#username "raviqqe" password "Gytri1993", is "raviqqe" here;
