@@ -5,3 +5,5 @@ all:
 	@cp /home/raviqqe/.xinitrc files
 	@cp /home/raviqqe/.mailrc files
 	@cp /home/raviqqe/.shrc files
+
+.PHONY: all
