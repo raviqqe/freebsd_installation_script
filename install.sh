@@ -1,34 +1,61 @@
 #!/bin/sh
 
-USER=raviqqe
-GROUP=$USER
+error() {
+  echo "$*" >&2
+}
+
+fail() {
+  error "$*"
+  exit 1
+}
+
+USER=$(stat -f %Su "$1")
+GROUP=$(stat -f %Sg "$1")
 readonly USER GROUP
 
 echo "install.sh - initial package installation script"
 
 # install pkg command when it's not done yet
-yes | pkg
+if [ -z "$(which pkg)" ]
+then
+  yes | pkg
+fi
 
 # install packages
 cat packages.list |
 sed 's/#.*//g' |
 grep -v '^[[:blank:]]*$' |
-while read word1 word2
+while read word1 word2 others
 do
+  if [ -n "$others" ]
+  then
+    fail "too many fields in packages.list: $word1 $word2 $others"
+  fi
+
   case $word1 in
   i)
-		echo installing $word2
-		pkg install -y $word2
+    pkg_installed="$pkg_installed $word1"
     ;;
   r)
-		echo removing $word2
-		pkg remove -y $word2
+    pkg_removed="$pkg_removed $word2"
     ;;
   *)
-    echo invalid letter at the first field
-    exit 1
+    fail "invalid letter at the first field: $word1"
   esac
 done
 
+pkg install -y $pkg_installed
+pkg remove -y $pkg_removed
+
 # copy config files
-install -o "$USER" -g "$GROUP" -m 600 files/.* /home/$USER
+cd files
+mkdir tmp
+for file in $(ls)
+do
+  mv $file tmp/$(echo "$file" | sed 's/DUMMY//g')
+done
+(
+  cd tmp
+  install -o "$USER" -g "$GROUP" -m 600 $(ls -A) /home/"$USER"
+)
+rm -rf tmp
