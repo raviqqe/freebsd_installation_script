@@ -1,9 +1,0 @@
-set number
-set nobackup
-set nowritebackup
-
-set expandtab
-set tabstop=2
-set softtabstop=2
-set shiftwidth=2
-set colorcolumn=80

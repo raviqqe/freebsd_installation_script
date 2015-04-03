@@ -1,3 +1,7 @@
+#!/bin/sh
+#
+# .xinitrc
+
 while :
 do
   xsetroot -name "`
@@ -18,6 +22,12 @@ do
       TZ=Asia/Tokyo date | sed 's/  */ /g'
     `"
   sleep 0.3
+done &
+
+while :
+do
+  feh -zr --bg-fill ${HOME}/pic
+  sleep 1800
 done &
 
 urxvt &
