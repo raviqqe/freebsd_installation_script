@@ -3,17 +3,21 @@ i nmap
 
 # port-mgmt
 i portmaster
+i portlint
 
 # devel
 i vim-lite
 i git
 i subversion
 i fossil
+i qemu
 
 # lang
 i python3
 i ruby
 i go
+i nasm
+i rust
 
 # www
 i lynx
@@ -26,6 +30,11 @@ i procmail
 
 # irc
 i irssi
+
+# games
+bsdgames
+bsdtris
+# typetod
 
 # x11
 ## servers
@@ -43,11 +52,17 @@ i xlsfonts
 i xfontsel
 
 ## apps
+i sterm
 i rxvt-unicode
 i surf-browser
 i feh
 i firefox
+i chromium
 i thunderbird
+i pcmanfm
+i wine
+i inkscape
+i gimp
 
 ## fonts
 i terminus-font
