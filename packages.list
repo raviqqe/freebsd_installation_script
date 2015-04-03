@@ -40,10 +40,11 @@ i xorg-docs
 i xsetroot
 i xset
 i xlsfonts
+i xfontsel
 
 ## apps
 i rxvt-unicode
-i surf
+i surf-browser
 i feh
 i firefox
 i thunderbird
