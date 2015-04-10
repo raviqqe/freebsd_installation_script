@@ -53,6 +53,7 @@ i xlsfonts
 i xfontsel
 i xrdb
 i xdm
+i xsm
 
 ## apps
 i sterm
