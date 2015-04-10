@@ -29,6 +29,11 @@ do
 done
 (
   cd tmp
-  install -o "$USER" -g "$GROUP" -m 600 $(ls -A) /home/"$USER"
+  for file in $(ls -A)
+  do
+    cp -R $file /home/"$USER"
+    chown -R "$USER":"$GROUP" /home/"$USER"/$file
+    chmod -R 600 /home/"$USER"/$file
+  done
 )
 rm -rf tmp
