@@ -60,7 +60,7 @@ i firefox
 i chromium
 i thunderbird
 i pcmanfm
-i wine
+#i wine
 i inkscape
 i gimp
 
