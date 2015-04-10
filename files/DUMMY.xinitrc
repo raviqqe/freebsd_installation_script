@@ -2,6 +2,8 @@
 #
 # .xinitrc
 
+xset b off
+
 while :
 do
   xsetroot -name "`
