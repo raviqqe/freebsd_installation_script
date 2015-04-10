@@ -8,3 +8,4 @@ urxvt*boldFont: xft:Terminus:bold:size=8
 urxvt*italicFont: xft:Terminus:italic:size=8
 urxvt*boldItalicFont: xft:Terminus:bold:size=8
 urxvt*shading: 16
+urxvt*loginShell: True
