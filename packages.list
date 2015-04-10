@@ -51,6 +51,8 @@ i xsetroot
 i xset
 i xlsfonts
 i xfontsel
+i xrdb
+i xdm
 
 ## apps
 i sterm
