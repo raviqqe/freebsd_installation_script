@@ -44,7 +44,7 @@ PS1="`whoami`@`hostname | sed 's/\..*//'`:\W \$ "
 # search path for cd(1)
 # CDPATH=:$HOME
 
-PAGER=less
+#PAGER=less
 export MANWIDTH=tty
 
 # plan 9
