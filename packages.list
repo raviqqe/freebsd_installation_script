@@ -1,5 +1,6 @@
 i sudo
 i nmap
+i arping
 
 # port-mgmt
 i portmaster
@@ -67,3 +68,4 @@ i gimp
 ## fonts
 i terminus-font
 i ja-font-ipa
+i ubuntu-font
