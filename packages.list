@@ -54,6 +54,8 @@ i xfontsel
 i xrdb
 i xdm
 i xsm
+i xrandr
+i xrefresh
 
 ## apps
 i sterm
